@@ -14,15 +14,19 @@ body {
   );
   min-height: 100vh;
 }
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px;
+}
 .bmi {
-  width: 350px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  width: 45%;
   background-color: #ffffff;
-  transform: translate(-50%, -50%);
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
+  gap: 40px;
 }
 h2 {
   font-size: 30px;
@@ -68,15 +72,24 @@ h2 {
   transform: scale(1.1);
   transition: 0.5s;
 }
-
+.chart{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 table {
-  width: 650px;
+  width: 100%;
+  max-width: 450px;
   border-collapse: collapse;
-  margin: 600px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 tr {
-  background: lightblue;
+  background: rgb(96, 218, 92);
 }
 
 th {
