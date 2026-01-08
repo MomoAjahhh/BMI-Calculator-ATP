@@ -11,5 +11,14 @@ document.getElementById("btn").addEventListener("click", function() {
   // Round BMI to 2 decimal places
   var bmio = bmi.toFixed(2);
 
-  document.getElementById("result").innerHTML = "Your BMI is " + bmio;
+  if (bmio < 18.5) {
+    document.getElementById("result").innerHTML = "Your BMI is Terlalu Kurus " + bmio;
+  } else if (bmio >= 18.5 && bmio <= 24.9) {
+    document.getElementById("result").innerHTML = "Your BMI is Normal " + bmio;
+  } else if (bmio >= 25 && bmio <= 29.9) {
+    document.getElementById("result").innerHTML = "Your BMI is Terlau Berat " + bmio;
+  } else if (bmio >= 30) {
+    document.getElementById("result").innerHTML = "Your BMI is Obesitas Bolo " + bmio;
+  }
+
 });
